@@ -1,0 +1,28 @@
+name: Build rules
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "build.js"
+      - "hosts.txt"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.repository == 'green1052/no-google-trash-site'
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
+      - name: Build
+        run: node build.js
+
+      - name: Push
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "filters-share/search.txt"

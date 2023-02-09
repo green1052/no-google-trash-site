@@ -1,0 +1,10 @@
+! Title: no-google-trash-site
+! Description: 쿠팡 파트너스 링크만 있는 사이트를 숨깁니다.
+! Version: 2023.0210.0
+! Expires: 1 day
+! Homepage: https://github.com/green1052/no-google-trash-site
+! Support: https://github.com/green1052/no-google-trash-site
+! License: https://github.com/green1052/no-google-trash-site/blob/master/LICENSE
+
+!#include hosts.txt
+!#include filters-share/search.txt
