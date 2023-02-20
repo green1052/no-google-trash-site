@@ -1,3 +1,4 @@
+[0-9]+.[a-zA-Z]+.(nl|sk|eu|fi|cl|cz|lt|(macerata\.)?it|lol|(kro\.)?kr|fr|es|si|(edu\.)?pl|ch|(pp\.)?ua|net|live|top|de)
 linstantthe.fr
 sportovnicentrumnovapaka.cz
 concepcionsuites.cl
