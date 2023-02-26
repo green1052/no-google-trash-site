@@ -1,6 +1,6 @@
 ! Title: no-google-trash-site
 ! Description: 구글 검색 결과에 나오는 쓰레기 같은 사이트를 차단합니다.
-! Version: 2023.0210.1
+! Version: 2023.0226.0
 ! Expires: 1 day
 ! Homepage: https://github.com/green1052/no-google-trash-site
 ! Support: https://github.com/green1052/no-google-trash-site
@@ -8,3 +8,5 @@
 
 !#include hosts.txt
 !#include filters-share/search.txt
+
+google.*#?#div[role="main"] div#search div[data-async-context] div.g[data-hveid]:-abp-contains(/[0-9]+.[a-zA-Z]+.(nl|sk|eu|fi|cl|cz|lt|(macerata\.)?it|lol|(kro\.)?kr|fr|es|si|(edu\.)?pl|ch|(pp\.)?ua|net|live|top|de)/)
